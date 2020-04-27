@@ -1,0 +1,43 @@
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  width: 80%;
+  height: 40px;
+  margin: 10px;
+  /*background: white;*/
+  /*color: black;*/
+  /*border: 1px solid black;*/
+}
+
+body {
+  background: linear-gradient(#ed4264, #ffedbc);
+}
+
+.btn-primary:hover {
+  color: #ed4264!important;
+  background: white!important;
+  border-color: white;
+  transition: .8s!important;
+}
+
+html {
+  background: #ffedbc;
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.border.rounded-circle.border-white {
+  border: 0px!important;
+}
+
+.btn-primary {
+  color: #fff;
+  /*background-color: #007bff;*/
+  font-size: 16px;
+  height: 60px;
+  background-color: transparent;
+  color: button;
+  height: 40px;
+  width: 100%;
+  font-family: Montserrat;
+  margin-bottom: 15px;
+}
+
