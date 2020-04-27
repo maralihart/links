@@ -1,43 +1,54 @@
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-  width: 80%;
-  height: 40px;
-  margin: 10px;
-  /*background: white;*/
-  /*color: black;*/
-  /*border: 1px solid black;*/
+:root {
+  --primary: #FF0080;
+  --secondary: #40E0D0;
+  --accent: white; /* This determines how your buttons are outlined */
 }
 
 body {
-  background: linear-gradient(#ed4264, #ffedbc);
+  background: linear-gradient(var(--primary), var(--secondary));
+  color: var(--accent);
 }
 
 .btn-primary:hover {
-  color: #ed4264!important;
-  background: white!important;
-  border-color: white;
-  transition: .8s!important;
+  color: var(--primary);
+  background: var(--accent);
+  border-color: var(--accent)!important;
+  transition: .8s;
 }
 
 html {
-  background: #ffedbc;
-  margin: 0!important;
-  padding: 0!important;
+  background: var(--secondary);
 }
 
-.border.rounded-circle.border-white {
+.border.rounded-circle{
   border: 0px!important;
 }
 
 .btn-primary {
-  color: #fff;
-  /*background-color: #007bff;*/
+  color: var(--accent);
   font-size: 16px;
   height: 60px;
   background-color: transparent;
-  color: button;
   height: 40px;
   width: 100%;
   font-family: Montserrat;
   margin-bottom: 15px;
+  border-color: var(--accent)!important;
 }
 
+footer {
+  position: absolute;
+  margin-bottom: 10px;
+  bottom: 0px;
+  color: var(--accent);
+}
+
+footer a {
+  color: var(--accent);
+}
+
+footer a:hover {
+  color: var(--primary);
+  transition: .8s;
+  text-decoration: none;
+}
