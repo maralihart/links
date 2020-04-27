@@ -1,6 +1,6 @@
 :root {
-  --primary: #FF0080;
-  --secondary: #40E0D0;
+  --primary: #FF5F6D; /* Top gradient */
+  --secondary: #FFC371; /* Bottom gradient */
   --accent: white; /* This determines how your buttons are outlined */
 }
 
